@@ -70,3 +70,27 @@ python3 -c "import tensorflow as tf; print(tf.reduce_sum(tf.random.normal([1000,
 ```
 
 The output should look like this. The numbers may differ, but it should have this format:
+
+
+# Notebook Setup
+
+In this step, you will set up a Jupyter Notebook to run your code. First, ensure that your Conda environment is activated. When activated, your command prompt will look like this:
+
+If it is inactive, you can activate it with the following command:
+
+```
+# conda activate tf
+```
+
+Next, install the necessary components to run the Jupyter Notebook and perform data visualization
+
+```
+# pip install notebook matplotlib
+```
+
+Finally, start the Jupyter Notebook by running the following command:
+
+```
+# mkdir -p /root/tensorflow
+# nohup conda run -n tf jupyter notebook --ip=* --no-browser --allow-root -NotebookApp.password='redhat' -NotebookApp.token='redhat' --notebook-dir="/root/tensorflow" </dev/null >/dev/null 2>&1 &
+```
