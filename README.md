@@ -94,3 +94,8 @@ Finally, start the Jupyter Notebook by running the following command:
 # mkdir -p /root/tensorflow
 # nohup conda run -n tf jupyter notebook --ip=* --no-browser --allow-root -NotebookApp.password='redhat' -NotebookApp.token='redhat' --notebook-dir="/root/tensorflow" </dev/null >/dev/null 2>&1 &
 ```
+
+# open notebook
+
+Open the notebook from browser and install required package
+![SSO](images/jupyter-01.png)
